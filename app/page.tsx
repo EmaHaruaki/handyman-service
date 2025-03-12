@@ -9,6 +9,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Phone, Mail, MessageCircle, Clock, CheckCircle, ArrowRight } from "lucide-react"
 import { Menu } from "lucide-react"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { DialogTitle } from "@/components/ui/dialog"
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -57,6 +58,7 @@ export default function Home() {
                 </Button>
               </SheetTrigger>
               <SheetContent side="right">
+                <DialogTitle>メニュー</DialogTitle>
                 <nav className="flex flex-col space-y-4 mt-8">
                   {menuItems.map((item) => (
                     <a
